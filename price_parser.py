@@ -10,9 +10,7 @@ z = str(a.get_text())
 zz = z.split("\n")
 xx = []
 for n in zz:
-    if len(n)>0:
+    xx.append(n.lstrip())
+xx = [x for x in xx if x]
 
-        xx.append(n.lstrip())
-yyy = [x for x in xx if x]
-
-print (yyy)
+print (xx)
